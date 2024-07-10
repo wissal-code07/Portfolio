@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     background-color:rgb(168, 112, 149);
+ }
+ 
+ .about-me {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     
+     
+     
+ }
+ 
+ .about-me .content {
+     max-width: 50%;
+     background-color: rgba(0, 0, 0, 0.2);
+     border-radius: 25px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ 
+ }
+ 
+ .about-me h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+ }
+ 
+ .about-me h1 span {
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .about-me p {
+     font-size: 18px;
+     line-height: 1.6;
+ }
+ 
+ .about-me .highlight {
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .about-me .graphic {
+     display: flex;
+     position: relative;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .about-me .graphic .shape {
+     width: 50px;
+     position: absolute;
+     margin: 10px;
+     background-color: #FFD700; /* or a gold color similar to the image */
+     border-radius: 50%;
+ }
+ 
+ .about-me .graphic .shape-1 {
+     width: 70px;
+     height: 300px;
+     top: px;
+     background-color: transparent;
+     right: 209px; /* Ajusté pour une meilleure position */
+     border-radius: 40px;
+     border: 2px solid #FFD700;
+ }
+ 
+ .about-me .graphic .shape-2 {
+     width: 70px;
+     height: 200px;
+    
+     right: 137px; /* Ajusté pour une meilleure position */
+     border-radius: 40px;
+     background-color: #FFD700;
+     border: 2px solid #FFD700;
+ }
+ 
+ .about-me .graphic .shape-5 {
+     width: 70px;
+     height: 160px;
+     
+     right: 350px; /* Ajusté pour une meilleure position */
+     border-radius: 40px;
+     background-color: #FFD700;
+     border: 2px solid #FFD700;
+ }
+ 
+ .about-me .graphic .shape-3 {
+     width: 70px;
+     height: 70px;
+     top: px;
+     right: 280px; /* Ajusté pour une meilleure position */
+     background-color: white;
+ }
+ 
+ .about-me .graphic .shape-4 {
+     width: 70px;
+     height: 70px;
+     top: px;
+      right: 66px;
+     background-color: white;
+ }
+ 
+ 
+ .services {
+     text-align: center;
+     padding: 50px 20px;
+     
+ }
+ 
+ .services h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+     
+ }
+ 
+ .services h1 span {
+     
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .service-container {
+     display: flex;/* positionner les containers horizontalement  */
+     justify-content: center;/* la position horizontale des containers */
+     flex-wrap: inherit;
+     gap: 30px;/* l'espaace entre les containers */
+     padding-bottom: 30px;
+ }
+ 
+ .service-box {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     padding: 20px;
+     width: 250px;
+     justify-content: space-between;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ }
+ 
+ .service-box-skill {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     padding: 20px;
+     width: 100px;
+     justify-content: space-between;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ }
+ 
+ .service-box .icon {
+     font-size: 50px;
+     margin-bottom: 10px;
+ }
+ 
+ .service-box h2 {
+     font-size: 22px;
+     
+     margin-bottom: 10px;
+ }
+ 
+ .service-box ul {
+     list-style-type: none;
+     padding: 0;
+     text-align: left;
+ }
+ 
+ .service-box ul li {
+     margin-bottom: 10px;
+ }
+ 
+ .hello{
+     display: flex;
+     text-align: center;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     
+ }
+ 
+ .content img{
+    
+     width: 200px;
+     padding-left: 220px;
+ 
+ }
+ 
+ .content-right{
+     background-color:rgba(0, 0, 0, 0.2); 
+     border-radius: 25px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ 
+ }
+ .hello .highlight{
+     color: #FFD700;
+ }
+ 
+ .top{
+     display: flex;
+    
+     justify-content: space-between;
+ 
+ }
+ .right{
+     display: flex;
+    
+ }
+ .right .flag{
+     display: flex;
+     padding: 5px;
+ }
+ 
+ .middle{
+    
+     color: rgb(255, 255, 255);
+     text-align: center;
+     padding-left: 30px;
+ 
+ }
+ 
+ .left{
+     display: flex;
+   
+ 
+ }
+ 
+ .left .home{
+     background-color:rgba(0, 0, 0, 0.2); 
+     border-radius: 30px;
+ }
+ 
+ .home{
+ padding: 20px;
+ text-align: center;
+ }
+ 
+ .home:hover img {
+    transform: scale(1.2); /* Zoom de l'image lorsque survolé */
+}
+        .gauche{
+             display: flex;
+             justify-content: center; /* Centre les éléments horizontalement */
+             padding-right: 100px;
+        }
+ 
+        .images {
+         
+             justify-content: center; /* Centre les images horizontalement */
+             align-items: center; /* Centre les images verticalement si nécessaire */
+             padding-right: 100px;
+        }
+ 
+  
+        .container {
+             background-color: rgba(0, 0, 0, 0.3);
+             padding: 20px;
+             margin: 50px;
+             border-radius: 20px;
+             width: 300px;
+             text-align: center;
+         }
+         .container h1 {
+             font-size: 30px;
+         }
+ 
+        .container h1 span{
+             color: #FFD700;
+        }
+         .language {
+             margin: 15px 0;
+         }
+         .language p {
+             margin: 5px 0;
+         }
+         .bars {
+             display: flex;
+             justify-content: center;
+         }
+         .bar {
+             width: 20px;
+             height: 20px;
+             background-color: #1b2421;
+             margin: 2px;
+             border-radius: 3px;
+         }
+         .bar.active {
+             background-color: #dbb030;
+         }
+ 
+         .languagess{
+            
+             display: flex;
+             justify-content: center;
+             padding: 50px;
+             padding: 50px;
+         }
+ 
+        .contact-container{
+             display: flex;
+             justify-content: space-between;
+             padding-right: 50px;
+             padding-left: 50px;
+        }
+ 
+        .contact h1{
+         font-size: 40px;
+        }
+ 
+        .contact h1 span{
+         color: #FFD700;
+        }
+
+        .flag:hover img {
+     transform: scale(1.2); 
+ }
+ 
+ .middle:hover h1 {
+     transform: scale(1.2); 
+ }
+       </style>
+</head>
+<body>
+    <section class="top">
+        <div class="middle">
+            <h1>MY PORTFOLIO</h1>
+        </div>
+
+        <div class="left">
+            <a href="#home" class="home"> <img src="house-user.png" style="width: 30px; height:30px;"> </a>
+            <a href="#about" class="home"><img src="face-awesome.png" style="width: 30px; height:30px;"></a>
+            <a href="#services" class="home"> <img src="customer-care.png" style="width: 30px; height:30px;"> </a>
+            <a href="#skills" class="home"><img src="responsability.png" style="width: 30px; height:30px;"></a>
+            <a href="#languages" class="home"><img src="language.png" style="width: 30px; height:30px;"></a>
+            <a href="#education" class="home"><img src="user-graduate.png" style="width: 30px; height:30px;"></a>
+            <a href="#contact" class="home"><img src="customer-service.png" style="width: 30px; height:30px;"></a>
+        </div>
+        <div class="right">
+           
+            <div class="flag">
+            <a href="index.html"><img src="united-kingdom.png" style="width: 30; height:30px" ></a>
+            </div>
+            <div class="flag">
+                <a href="indexAR.html"><img src="world.png" style="width: 30; height:30px" ></a></div>
+        </div>
+    </section>
+    <section id="home" class="hello">
+        <div class="content">
+            <img  src="developer.png"  >
+        </div>
+
+        <div class="content-right">
+            <h1>Bonjour, je m'appelle <span class="highlight">BENKOUIDER WISSAL</span></h1>
+            <h1>je suis une <span class="highlight">Programmeur d'aplication</span>  et <span class="highlight">developpeur du fullstack </span> . </h1>
+            <h1>je suis une etudiante a l'  <span class="highlight">USTHB</span></h1>
+            <h1> <span class="highlight">ingenerie des systemes informatiques et logiciels</span></h1>
+        </div>
+    </section>
+    <section id="about" class="about-me">
+        <div class="content">
+            <h1>À propos de <span>moi</span></h1>
+            <p>Passionné par la programmation d'applications et le développement fullstack, je combine créativité et compétences techniques <span class="highlight">Créer des expériences numériques impactantes.</span>.
+                Avec une solide expérience en programmation d'applications et une expertise en développement web,<span class="highlight">Je crée des interfaces utilisateur esthétiques, intuitives et réactives.</span> .
+                Mon approche centrée sur l'utilisateur me permet de concevoir des applications efficaces et d'offrir une expérience utilisateur optimale. Toujours à l'affût des dernières tendances, j'apprécie relever de
+                nouveaux défis et collaborer avec les clients pour donner vie à leurs idées avec <span class="highlight">La programmation d'applications de haute qualité et le développement web de qualité supérieure</span> .</p>
+        </div>
+        <div class="graphic">
+            <img src="social-media.png" style="width: 250px; height:250px;padding-right:100px">
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h1>Mes <span>Services</span></h1>
+        <div class="service-container">
+            <div class="service-box">
+                <div class="icon">📱💻</div>
+                <h2>Developpement des applications</h2>
+                <ul>
+                    <li>Développement d'applications natif ou cross-platform.</li>
+                    <li>Conception et développement d'applications iOS et Android.</li>
+                    <li>Intégration d'APIs et de services tiers.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🌐🖥️</div>
+                <h2>Développement web fullstack
+                </h2>
+                <ul>
+                    <li>Construction de sites web et d'applications web réactives.
+                    </li>
+                    <li>Développement frontend avec HTML, CSS et des frameworks JavaScript comme React, Angular ou Vue.js.
+                    </li>
+                    <li>Développement backend avec Node.js, Python ou d'autres langages adaptés.
+                    </li>
+                    <li>Conception et gestion de bases de données (SQL ou NoSQL).
+                    </li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🎨🖌️</div>
+                <h2>conception UI/UX </h2>
+                <ul>
+                    <li>Recherche et analyse des besoins et comportements des utilisateurs.
+                    </li>
+                    <li>Création de designs UI intuitifs et de flux UX efficaces.
+                    </li>
+                    <li>Prototypage et création de wireframes.
+                    </li>
+                    <li>Tests utilisateurs et améliorations itératives.
+                    </li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🛠️🔧</div>
+                <h2>Maintenance et Support</h2>
+                <ul>
+                    <li>Mises à jour régulières et améliorations des applications et des sites web.
+                    </li>
+                    <li>Surveillance et optimisation des performances des sites web ou des applications.
+                    </li>
+                    <li>Support technique, résolution des problèmes et correction des bugs.
+                    </li>
+                    <li>Processus d'intégration et de déploiement continus (CI/CD).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="images"></div>
+    </section>
+
+    <section id="skills" class="services">
+        <h1>Mes<span> Compétences</span></h1>
+        <div class="service-container">
+            <div class="service-box-skill"><img src="css-3.png" style="width: 70px; height:70px" ></div>
+            <div class="service-box-skill"><img src="html.png" style="width: 70px; height:70px"></div>
+            <div class="service-box-skill"> <img src="java-script.png" style="width: 70px; height:70px"></div>
+            <div class="service-box-skill"><img src="java (1).png" style="width: 70px; height:70px"></div>
+        </div>
+        <div class="service-container">
+            <div class="service-box-skill"><img src="atom.png" style="width: 70px; height:70px" ></div>
+            <div class="service-box-skill"><img src="visual-studio.png" style="width: 70px; height:70px"></div>
+            <div class="service-box-skill"><img src="python.png" style="width: 70px; height:70px"></div>
+            <div class="service-box-skill"><img src="programing.png" style="width: 70px; height:70px"></div>
+             
+        </div>
+    </section>
+<section class="languagess" id="languages">
+    <div class="container">
+        <h1>Mes<span> LANGUES</span></h1>
+        <div class="language">
+            <div><h3>ARB</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>Ma première langue et langue maternelle</h3>
+        </div>
+        <div class="language">
+            <div><h3>ENG - FR</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar active"></div>
+                <div class="bar "></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>Je comprends bien mais mon expression orale n'est pas très bonne.</h3>
+        </div>
+        <div class="language">
+            <div><h3>RUSS</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar active"></div>
+                <div class="bar active "></div>
+                <div class="bar avtive"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>je suis seulement une débutante</h3>
+        </div>
+    </div>
+    <div class="container-pic">
+        <img src="workspace.png" >
+    </div>
+    <div class="container" id="education">
+        <h1>MON<span> EDUCATION ET EXPERIENCE</span></h1>
+        <div class="language">
+            <div><h3>2021-2025</h3></div>
+            <h3>Licence en systemes informatisues et logiciels</h3>
+        </div>
+        <div class="language">
+            <div><h3>2022-présent</h3></div>
+            <h3>Freelance sur la plateforme Upwork.</h3>
+        </div>
+        
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h1>MON<span> Contact</span></h1>
+    <div class="contact-container">
+        <div class="contact-box">
+            <img src="gmail.png" style="width:50px ; height:50px">
+            <div><h5>wissalbenkouider71</h5></div>
+        </div>
+        <div class="contact-box">
+            <img src="games.png" style="width:50px ; height:50px">
+            <div><h5>.wizzou</h5></div>
+            
+        </div>
+
+        <div class="contact-box">
+            <img src="linkedin.png" style="width:50px ; height:50px">
+            <div><h5>benkouider wissal</h5></div>
+        </div>
+
+        <div class="contact-box">
+            <img src="github.png" style="width:50px ; height:50px">
+            <div><h5>wissal-code07</h5></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

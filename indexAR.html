@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     background-color:rgb(168, 112, 149);
+ }
+ 
+ .about-me {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     
+     
+     
+ }
+ 
+ .about-me .content {
+     max-width: 50%;
+     background-color: rgba(0, 0, 0, 0.2);
+     border-radius: 25px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ 
+ }
+ 
+ .about-me h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+ }
+ 
+ .about-me h1 span {
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .about-me p {
+     font-size: 18px;
+     line-height: 1.6;
+ }
+ 
+ .about-me .highlight {
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .services {
+     text-align: center;
+     padding: 50px 20px;
+     
+ }
+ 
+ .services h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+     
+ }
+ 
+ .services h1 span {
+     
+     color: #FFD700; /* or a gold color similar to the image */
+ }
+ 
+ .service-container {
+     display: flex;/* positionner les containers horizontalement  */
+     justify-content: center;/* la position horizontale des containers */
+     flex-wrap: inherit;
+     gap: 30px;/* l'espaace entre les containers */
+     padding-bottom: 30px;
+ }
+ 
+ .service-box {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     padding: 20px;
+     width: 250px;
+     justify-content: space-between;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ }
+ 
+ .service-box-skill {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     padding: 20px;
+     width: 100px;
+     justify-content: space-between;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ }
+ 
+ .service-box .icon {
+     font-size: 50px;
+     margin-bottom: 10px;
+ }
+ 
+ .service-box h2 {
+     font-size: 22px;
+     
+     margin-bottom: 10px;
+ }
+ 
+ .service-box ul {
+     list-style-type: none;
+     padding: 0;
+     text-align: left;
+ }
+ 
+ .service-box ul li {
+     margin-bottom: 10px;
+ }
+ 
+ .hello{
+     display: flex;
+     text-align: center;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     
+ }
+ 
+ .content img{
+    
+     width: 200px;
+     padding-right: 220px;
+ 
+ }
+ 
+ .content-right{
+     background-color:rgba(0, 0, 0, 0.2); 
+     border-radius: 25px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ 
+ }
+ .hello .highlight{
+     color: #FFD700;
+ }
+ 
+ .top{
+     display: flex;
+    
+     justify-content: space-between;
+ 
+ }
+ .right{
+     display: flex;
+    
+ }
+ .right .flag{
+     display: flex;
+     padding: 5px;
+ }
+ 
+ .middle{
+    
+     color: rgb(255, 255, 255);
+     text-align: center;
+     padding-right: 30px;
+ 
+ }
+ 
+ .left{
+     display: flex;
+   
+ 
+ }
+ 
+ .left .home{
+     background-color:rgba(0, 0, 0, 0.2); 
+     border-radius: 30px;
+ }
+ 
+ .home{
+ padding: 20px;
+ text-align: center;
+ }
+ 
+ .gauche{
+     display: flex;
+     justify-content: center; /* Centre les éléments horizontalement */
+     padding-right: 100px;
+ }
+ 
+ .images {
+         
+         justify-content: center; /* Centre les images horizontalement */
+         align-items: center; /* Centre les images verticalement si nécessaire */
+         padding-right: 100px;
+     }
+ 
+  
+     .container {
+             background-color: rgba(0, 0, 0, 0.3);
+             padding: 20px;
+             margin: 50px;
+             border-radius: 20px;
+             width: 300px;
+             text-align: center;
+         }
+         .container h1 {
+             font-size: 30px;
+         }
+ 
+ .container h1 span{
+     color: #FFD700;
+ }
+         .language {
+             margin: 15px 0;
+         }
+         .language p {
+             margin: 5px 0;
+         }
+         .bars {
+             display: flex;
+             justify-content: center;
+         }
+         .bar {
+             width: 20px;
+             height: 20px;
+             background-color: #1b2421;
+             margin: 2px;
+             border-radius: 3px;
+         }
+         .bar.active {
+             background-color: #dbb030;
+         }
+ 
+         .languagess{
+            
+             display: flex;
+             justify-content: center;
+             padding: 50px;
+             padding: 50px;
+         }
+ 
+        .contact-container{
+             display: flex;
+             justify-content: space-between;
+             padding-right: 50px;
+             padding-left: 50px;
+        }
+ 
+        .contact h1{
+         font-size: 40px;
+        }
+ 
+        .contact h1 span{
+         color: #FFD700;
+        }
+ 
+        .home:hover img {
+     transform: scale(1.2); 
+ }
+ 
+ .flag:hover img {
+     transform: scale(1.2); 
+ }
+ 
+ .middle:hover h1 {
+     transform: scale(1.2); 
+ }
+       </style>
+</head>
+<body>
+    <section class="top">
+        
+        <div class="right">
+            <div class="flag">
+            <a href="indexfr.html"><img src="france.png" style="width: 30; height:30px" ></a>
+            </div>
+            
+            <div class="flag">
+                <a href="index.html"><img src="united-kingdom.png" style="width: 30; height:30px" ></a>
+                </div>
+        </div>
+
+        <div class="left"> 
+            <a href="#contact" class="home"><img src="customer-service.png" style="width: 30px; height:30px;"></a>
+            <a href="#education" class="home"><img src="user-graduate.png" style="width: 30px; height:30px;"></a>
+            <a href="#languages" class="home"><img src="language.png" style="width: 30px; height:30px;"></a>
+            <a href="#skills" class="home"><img src="responsability.png" style="width: 30px; height:30px;"></a>
+            <a href="#services" class="home"> <img src="customer-care.png" style="width: 30px; height:30px;"> </a>
+            <a href="#about" class="home"><img src="face-awesome.png" style="width: 30px; height:30px;"></a>
+            <a href="#home" class="home"> <img src="house-user.png" style="width: 30px; height:30px;"> </a>
+
+        </div>
+        <div class="middle">
+            <h1>MY PORTFOLIO</h1>
+        </div>
+    </section>
+    <section id="home" class="hello">
+        <div class="content-right">
+            <h1>مرحبا انا اسمي <span class="highlight">وصال بن قويدر</span></h1>
+            <h1>اما <span class="highlight">مبرمجة تطبيقات</span>  و <span class="highlight">مطورة مواقع الويب</span>  </h1>
+            <h1>انا طالبة في  <span class="highlight">جامعة هواري بومدين للعلوم و التكنولوجيا</span></h1>
+            <h1> تخصص<span class="highlight"> هندسة انظمة الاعلام الألي و البرمجيات</span></h1>
+        </div>
+        <div class="content">
+            <img  src="developer.png"  >
+        </div>
+
+        
+    </section>
+    <section id="about" class="about-me">
+        
+        <div class="graphic">
+            <img src="social-media.png" style="width: 250px; height:250px;padding-left:100px">
+        </div>
+        <div class="content">
+            <h1>بالنسبة <span>لي</span></h1>
+            <p>انا متحمسة لبرمجة التطبيقات و تطوير الويب بشكل كامل, اجمه بين الابداع و المهارات التقنية  <span class="highlight">لخلق تجارب رقمية مؤثرة</span>. بفضل خبرتي الواسعة في هذا المجال,<span class="highlight">اقوم بانشاء واجهات مستخدم جميلة و بديهية و مستجيبة </span> . تسمح لي منهجي الموجه نحو المستخدم بتصميم تطبيقات فعّالة وتقديم تجربة مستخدم مثالية.دائمًا ما أكون على دراية بأحدث الاتجاهات، وأستمتع بتحديات جديدة والتعاون مع العملاء لتحقيق أفكارهم من خلال برمجة تطبيقات عالية الجودة وتطوير الويب الراقي </p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h1> <span>خدماتي</span></h1>
+        <div class="service-container">
+
+            <div class="service-box">
+                <div class="icon">🛠️🔧</div>
+                <h2>Maintenance and Support</h2>
+                <ul>
+                    <li>Regular updates and enhancements to apps and websites.
+                    </li>
+                    <li>Monitoring and optimizing website or app performance.
+                    </li>
+                    <li>Technical support, issue resolution, and bug fixing.
+                    </li>
+                    <li>Continuous integration and deployment (CI/CD) processes.
+                    </li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🎨🖌️</div>
+                <h2>UI/UX Design</h2>
+                <ul>
+                    <li>Research and analysis of user needs and behaviors.
+                    </li>
+                    <li>Creation of intuitive UI designs and efficient UX workflows.
+                    </li>
+                    <li>Prototyping and wireframing.
+                    </li>
+                    <li>User testing and iterative improvements.
+                    </li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🌐🖥️</div>
+                <h2>تطوير مواقع الويب </h2>
+                <ul>
+                    <li>Building responsive websites and web applications.
+                    </li>
+                    <li>Frontend development using HTML, CSS, and JavaScript frameworks like React, Angular, or Vue.js.
+                    </li>
+                    <li>Backend development with Node.js, Python, or other suitable languages.
+                    </li>
+                    <li>Database design and management (SQL or NoSQL).
+                    </li>
+                </ul>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">📱💻</div>
+                <h2>برمجة التطبيقات</h2>
+                <ul>
+                    <li>VNative or cross-platform app development.</li>
+                    <li>iOS and Android app design and development.</li>
+                    <li>Integration of third-party APIs and services.
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="skills">
+        
+            <div class="images">
+                
+            </div>
+            
+    </section>
+
+    <section id="skills" class="services">
+        <h1><span>مهاراتي</span></h1>
+        <div class="service-container">
+            <div class="service-box-skill">
+                <img src="css-3.png" style="width: 70px; height:70px" >
+                
+                
+            </div>
+            <div class="service-box-skill">
+                
+                <img src="html.png" style="width: 70px; height:70px">
+
+            </div>
+           
+            <div class="service-box-skill">
+                
+                <img src="java-script.png" style="width: 70px; height:70px">
+
+            </div>
+            
+             <div class="service-box-skill">
+                
+                <img src="java (1).png" style="width: 70px; height:70px">
+
+            </div>
+        </div>
+        <div class="service-container">
+            <div class="service-box-skill">
+                <img src="atom.png" style="width: 70px; height:70px" >
+                
+                
+            </div>
+            <div class="service-box-skill">
+                
+                <img src="visual-studio.png" style="width: 70px; height:70px">
+
+            </div>
+           
+            <div class="service-box-skill">
+                
+                <img src="python.png" style="width: 70px; height:70px">
+
+            </div>
+            <div class="service-box-skill">
+                
+                <img src="programing.png" style="width: 70px; height:70px">
+            </div>
+             
+        </div>
+    </section>
+<section class="languagess" id="languages">
+    <div class="container">
+        <h1><span>لغاتي</span></h1>
+        <div class="language">
+            <div><h3>العربية</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>لغتي الاولى و الاصلية</h3>
+        </div>
+        <div class="language">
+            <div><h3>الانجليزية - الفرنسية</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar active"></div>
+                <div class="bar "></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>افهمها جيدا و لكن لا اتكلمها بطلاقة</h3>
+        </div>
+        <div class="language">
+            <div><h3>الروسية</h3></div>
+            <div class="bars">
+                <div class="bar active"></div>
+                <div class="bar active"></div>
+                <div class="bar active "></div>
+                <div class="bar avtive"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>لا زلت مبتدئة</h3>
+        </div>
+    </div>
+    <div class="container-pic">
+        <img src="workspace.png" >
+        
+    </div>
+    <div class="container" id="education">
+        <h1> <span>مساري التعليمي و خبراتي</span></h1>
+        <div class="language">
+            <div><h3>2021-2025</h3></div>
+            
+            <h3>ليسانس هندسة انظمة الاعلام الالي و البرمجيات</h3>
+        </div>
+        <div class="language">
+            <div><h3>2022-present</h3></div>
+            
+            <h3>اعمل في منصات العمل الحر </h3>
+        </div>
+        
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h1> للتواصل<span>معي</span></h1>
+    <div class="contact-container">
+        <div class="contact-box">
+            <img src="gmail.png" style="width:50px ; height:50px">
+            <div><h5>wissalbenkouider71</h5></div>
+        </div>
+        <div class="contact-box">
+            <img src="games.png" style="width:50px ; height:50px">
+            <div><h5>.wizzou</h5></div>
+            
+        </div>
+
+        <div class="contact-box">
+            <img src="linkedin.png" style="width:50px ; height:50px">
+            <div><h5>benkouider wissal</h5></div>
+        </div>
+
+        <div class="contact-box">
+            <img src="github.png" style="width:50px ; height:50px">
+            <div><h5>wissal-code07</h5></div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

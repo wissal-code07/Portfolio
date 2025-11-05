@@ -364,7 +364,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2025 Sarah - Développeuse Full-Stack. Tous droits réservés.</p>
+        <p>&copy; 2025 WISSAL - Développeuse Web & Systèmes Intelligents Visuels Passionnée. Tous droits réservés.</p>
         <p>Fait avec ❤️ et React</p>
       </footer>
     </div>
